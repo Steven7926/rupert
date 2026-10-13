@@ -1,0 +1,14 @@
+{
+ "_about": "Little pictures drawn in one color: what a pet dreams about, and its reactions. K = filled.",
+ "dreams": {
+  "z": ["KKKK", "..K.", ".K..", "KKKK"],
+  "bone": ["K...K", "KKKKK", "K...K"],
+  "fish": [".KK.K", "KKKKK", ".KK.K"],
+  "heart": ["KK.KK", "KKKKK", ".KKK.", "..K.."],
+  "carrot": ["..K.K", "KKK..", "KK...", "K...."],
+  "ball": [".KK.", "KKKK", "KKKK", ".KK."]},
+ "heart": [".KK.KK.", "KKKKKKK", "KKKKKKK", ".KKKKK.", "..KKK..", "...K..."],
+ "bang": ["KK", "KK", "KK", "KK", "..", "KK"],
+ "heart_color": "#ff6b8a",
+ "bang_color": "#ffc43d",
+ "dust_color": "#a8977c"}

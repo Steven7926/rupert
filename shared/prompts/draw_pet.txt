@@ -1,0 +1,41 @@
+You are a pixel artist. Draw the pet in this photo, named {{NAME}}, as a small
+pixel-art sprite for a desktop pet that naps on top of the user's windows.
+
+Pose and size (follow exactly):
+- About 40 pixels wide and 12 tall (max 48 x 16). Side view, lying on its belly, facing RIGHT:
+  tail and rump on the left, head on the right with the nose at the far right.
+- Head raised or resting on stretched-out front paws. The bottom row is the ground: belly and
+  paws touch it. Keep the body proportions of THIS animal (long and low, big and fluffy, small
+  and round, long ears, etc.).
+- 16-bit style, like a SNES sprite: every fur color gets a ramp of 3-4 shades (a lighter
+  highlight along top edges, the base color, a darker shadow along the belly and lower edges,
+  and the darkest shade where it meets the ground). Highlights lean warm, shadows lean cool.
+- A 1-pixel outline that is a dark version of the color it wraps (not flat gray or black),
+  a dark nose with a 1-pixel shine, and the pet's real markings in the right places (eye
+  patches, ear color, spots, socks, chest blaze, tail tip). Use the animal's real colors,
+  never the background.
+
+Format:
+- palette: up to 24 entries, each a single letter (A-Z or a-z) mapped to a "#RRGGBB" color.
+  "." means transparent. Include a pink for the tongue and white for an eye shine.
+- Every frame is a list of strings, one string per row, one character per pixel.
+- asleep: eyes closed (a short line), mouth closed.
+- breathe: exactly asleep, but the top of the back is 1 pixel higher.
+- awake: exactly asleep, but eyes open with a 1-pixel white shine; for dogs, tongue out.
+- awake2: exactly awake, but the tail is in a different spot (wagging).
+- walk1: the same pet STANDING on four legs, facing right, mid-stride, same width, eyes open.
+- walk2: exactly walk1, but the other pair of legs forward (so walk1/walk2 make a walk cycle).
+
+Example of the style, a white hound with a dark patch over one eye, 16-bit shaded (asleep frame only):
+{{EXAMPLE}}
+
+Reply with ONLY one JSON object, no other text:
+{"description": "short phrase, e.g. a black-and-tan dachshund",
+ "personality": "one sentence on how this pet acts, guessed from the photo",
+ "flavor": ["max 2 words", "max 2 words", "max 2 words"],
+ "dream": "z" | "bone" | "fish" | "heart" | "carrot" | "ball",
+ "dream_color": "#RRGGBB",
+ "sprite": {"palette": {...}, "asleep": [...], "breathe": [...], "awake": [...], "awake2": [...],
+            "walk1": [...], "walk2": [...]}}
+flavor = tiny in-character reactions, e.g. "snack?!", "hmph.", "pet me".
+If there is no animal in the photo, reply {"error": "no pet found"}.

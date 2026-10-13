@@ -1,0 +1,23 @@
+# Build output
+macos/Rupert.app/
+macos/Rupert
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Never commit keys or personal config
+.rupert_config.json
+.rupert_key
+.rupert_pets.json
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tooling
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,27 @@
+{
+ "_about": "Chat box colors. Right-click → Appearance.",
+ "themes": {
+  "light": {
+   "paper": "#FFF7E8",
+   "border": "#4D2B14",
+   "text": "#4D2B14",
+   "muted": "#9A7A60",
+   "field": "#F2E2C6",
+   "field_edge": "#C9A27A",
+   "accent": "#C4803E",
+   "chip": "#F6D49E",
+   "chip_text": "#4D2B14",
+   "button": "#EBCB98",
+   "button_hover": "#E0B878"},
+  "dark": {
+   "paper": "#2A2420",
+   "border": "#C9A27A",
+   "text": "#F2E6D6",
+   "muted": "#8C7A68",
+   "field": "#1B1714",
+   "field_edge": "#5A4634",
+   "accent": "#E0A458",
+   "chip": "#5C4128",
+   "chip_text": "#FFE3BC",
+   "button": "#4A3826",
+   "button_hover": "#5E4630"}}}

@@ -1,0 +1,15 @@
+{
+ "_about": "Right-click → Activity. Schedule hours run 6..30 (6 a.m. to 6 a.m.); gap is seconds between walks, null = asleep; speed in points per second. Zoomies: a walk can turn into a run of laps, each a random length (run_lengths: fractions of the window: a quarter, half, the whole thing); more likely in fast slots (speed 40+) and for zoomy pets.",
+ "modes": [
+  {"id": "time", "label": "Lively by time of day"},
+  {"id": "normal", "label": "Wander sometimes"},
+  {"id": "stay", "label": "Stay in the corner"}],
+ "schedule": [
+  {"start": 6, "end": 9, "gap": [30, 90], "speed": 45},
+  {"start": 9, "end": 12, "gap": [60, 180], "speed": 32},
+  {"start": 12, "end": 14, "gap": [45, 120], "speed": 40},
+  {"start": 14, "end": 17, "gap": [120, 300], "speed": 26},
+  {"start": 17, "end": 21, "gap": [40, 140], "speed": 45},
+  {"start": 21, "end": 23, "gap": [240, 480], "speed": 24},
+  {"start": 23, "end": 30, "gap": null, "speed": 30}],
+ "zoomies": {"speed": 130, "laps": [3, 5], "fast_slot": 1.5, "slow_slot": 0.5, "run_lengths": [0.25, 0.5, 1.0]}}
